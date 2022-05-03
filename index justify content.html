@@ -7,12 +7,14 @@
     <style>
         .container{
             max-width: 400px;
+            min-height: 200px;
             border: 1px solid black;
             margin: 0;
             display: flex;
         }
         .item{
             background-color: blueviolet;
+            max-height: 20px;
             margin: 5px;
             text-align: center;
             color: white;
@@ -31,6 +33,9 @@
         }
         .space-around{
             justify-content: space-around;
+        }
+        .column{
+            flex-direction: column;
         }
     </style>
 </head>
@@ -62,6 +67,38 @@
     </section>
     <p>Space-Around</p>
     <section class="container space-around">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+        <div class="item">outro</div>
+    </section>
+    <p>Flex-Start</p>
+    <section class="container flex-start column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+    </section>
+    <p>Flex-End</p>
+    <section class="container flex-end column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+    </section>
+    <p>Center</p>
+    <section class="container center column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+    </section>
+    <p>Space-Between</p>
+    <section class="container space-between column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item</div>
+        <div class="item">outro</div>
+    </section>
+    <p>Space-Around</p>
+    <section class="container space-around column">
         <div class="item">1</div>
         <div class="item">item 2</div>
         <div class="item">outro item</div>
