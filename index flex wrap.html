@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lucas Garcia HTML Flex Container</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            /* iniciando estilização de elementos flex */
+            .flex-container_1{
+                margin-bottom: 100px;
+                max-width: 400px;
+                border: 2px solid black;
+                display: flex;
+            }
+            .flex-container_2{
+                margin-bottom: 150px;
+                max-height: 280px;
+                max-width: 200px;
+                display: flex;
+                flex-direction: column;
+                border: 2px solid black;
+            }
+            .item_1{
+                height: 50%;
+                line-height: 70px;
+                min-width: 100px;
+                max-width: 100px;
+                min-height: 50px;
+                max-height: 100px;
+                font-size: 24px;
+                text-align: center;
+            }
+            .nowrap{
+                flex-wrap: nowrap;
+            }
+            .wrap{
+                flex-wrap: wrap;
+            }
+            .wrap-reverse{
+                flex-wrap: wrap-reverse;
+            }
+            .green{
+                background-color: lightgreen;
+            }
+            .orange{
+                background-color: orange;
+            }
+            .blue{
+                background-color: lightblue;
+            }
+            .gray{
+                background-color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> No Wrap</h1>
+        <!-- esta classe wrap é nula (nowrap) -->
+        <div class="flex-container_1 nowrap">
+            <div class="item_1 green">1</div>
+            <div class="item_1 orange">2</div>
+            <div class="item_1 blue">3</div>
+            <div class="item_1 gray">4</div>
+            <div class="item_1 green">5</div>
+        </div>
+        <h1> Wrap</h1>
+        <!-- esta classe wrap é a padrão, jogando o elemento 5 para a linha abaixo(nowrap) -->
+        <div class="flex-container_1 wrap">
+            <div class="item_1 green">1</div>
+            <div class="item_1 orange">2</div>
+            <div class="item_1 blue">3</div>
+            <div class="item_1 gray">4</div>
+            <div class="item_1 green">5</div>
+        </div>
+         <!-- esta classe wrap é reversa, jogando elemento 5 pra linha acima (wrap-reverse) -->
+        <h1>Wrap Reverse</h1>
+         <div class="flex-container_1 wrap-reverse">
+            <div class="item_1 green">1</div>
+            <div class="item_1 orange">2</div>
+            <div class="item_1 blue">3</div>
+            <div class="item_1 gray">4</div>
+            <div class="item_1 green">5</div>
+        </div>
+        <h1> No Wrap Column</h1>
+        <!-- esta classe wrap é nula e em coluna (nowrap) -->
+        <div class="flex-container_2 nowrap">
+            <div class="item_1 green">1</div>
+            <div class="item_1 orange">2</div>
+            <div class="item_1 blue">3</div>
+            <div class="item_1 gray">4</div>
+            <div class="item_1 green">5</div>
+        </div>
+        <h1> Wrap Column</h1>
+        <!-- esta classe wrap é a padrão, jogando o elemento 5 para a linha abaixo -->
+        <div class="flex-container_2 wrap">
+            <div class="item_1 green">1</div>
+            <div class="item_1 orange">2</div>
+            <div class="item_1 blue">3</div>
+            <div class="item_1 gray">4</div>
+            <div class="item_1 green">5</div>
+        </div>
+        <h1> Wrap Column Reverse</h1>
+        <!-- esta classe wrap é a padrão, jogando o elemento 5 para a linha abaixo -->
+        <div class="flex-container_2 wrap-reverse">
+            <div class="item_1 green">1</div>
+            <div class="item_1 orange">2</div>
+            <div class="item_1 blue">3</div>
+            <div class="item_1 gray">4</div>
+            <div class="item_1 green">5</div>
+        </div>
+    </body>
+        
+
+
+</html>

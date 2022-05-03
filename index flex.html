@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lucas Garcia HTML Flex</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            /* iniciando estilização de elementos flex */
+            .flex-container_1{
+                margin: 10px;
+                max-width: 300px;
+                padding: 10px;
+                border: 2px solid aquamarine;
+                border-radius: 20px;
+                display: flex;
+            }
+            .flex-container_2{
+                margin: 0;
+                padding: 0;
+                display: flex;
+                list-style: none;
+            }
+            .item_1{
+                background-color: antiquewhite;
+                margin: 5px;
+            }
+            .item_2{
+                background: rgb(18, 102, 98);
+                height: 50px;
+                width: 50px;
+                line-height: 50px;
+                font-size: 20px;
+                color: antiquewhite;
+                text-align: center;
+                margin: 5px;
+                border-radius: 10px;
+            }
+            /* definindo os flex directions */
+            .row{
+                flex-direction: row;
+            }
+            .row-reverse{
+                flex-direction: row-reverse;
+            }
+            .row-reverse li{
+                flex-direction: row-reverse;
+                background-color: darkgoldenrod;
+            }
+            .column{
+                float: left;
+                flex-direction: column;
+            }    
+            .column li{
+                color: antiquewhite;
+                background: rgb(18, 102, 98);
+            }
+            .column-reverse{
+                float: right;
+                flex-direction: column-reverse;
+            }    
+            .column-reverse li{
+                background-color: darkgoldenrod;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="flex-container_2 row">
+            <li class="item_2">1</li>
+            <li class="item_2">2</li>
+            <li class="item_2">3</li>
+            <li class="item_2">4</li>
+        </ul>
+        <ul class="flex-container_2 row-reverse li">
+            <li class="item_2">1</li>
+            <li class="item_2">2</li>
+            <li class="item_2">3</li>
+            <li class="item_2">4</li>
+        </ul>
+        <div class="flex-container_1">
+            <div class="item_1">Item 1</div>
+            <div class="item_1">Item 2</div>
+            <div class="item_1">Item 3</div>
+            <div class="item_1">Item 4</div>
+        </div>
+        <div class="flex-container_1 row-reverse">
+            <div class="item_1">Item 1</div>
+            <div class="item_1">Item 2</div>
+            <div class="item_1">Item 3</div>
+            <div class="item_1">Item 4</div>
+        </div>
+        <div class="flex-container_1 column">
+            <div class="item_1">Item 1</div>
+            <div class="item_1">Item 2</div>
+            <div class="item_1">Item 3</div>
+            <div class="item_1">Item 4</div>
+        </div>
+        <div class="flex-container_1 column-reverse">
+            <div class="item_1">Item 1</div>
+            <div class="item_1">Item 2</div>
+            <div class="item_1">Item 3</div>
+            <div class="item_1">Item 4</div>
+        </div>
+        <ul class="flex-container_2 column li">
+            <li class="item_2">1</li>
+            <li class="item_2">2</li>
+            <li class="item_2">3</li>
+            <li class="item_2">4</li>
+        </ul>
+        <ul class="flex-container_2 column-reverse li">
+            <li class="item_2">1</li>
+            <li class="item_2">2</li>
+            <li class="item_2">3</li>
+            <li class="item_2">4</li>
+        </ul>
+    </body>
+        
+
+
+</html>
