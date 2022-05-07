@@ -1,0 +1,96 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Garcia HTML Flex Shrink</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 500px;
+        }
+        .item{
+            background-color: coral;
+            margin: 5px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .shrink_1{
+            flex-shrink: 1;
+            flex-basis: 100px;
+        }
+        .shrink_2{
+            flex-shrink: 2;
+            flex-basis: 100px;
+        }
+        .shrink_3{
+            flex-shrink: 3;
+            flex-basis: 100px;
+        }
+        
+        .shrink_0{
+            flex-shrink: 0;
+            flex-basis: 100px;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <h1>Flex Shrink 1 + Flex-Grow 1</h1>
+        <div class="flex-container">
+            <div class="item shrink_1 fg-1">A</div>
+            <div class="item shrink_1 fg-1">B</div>
+            <div class="item shrink_1 fg-1">C</div>
+            <div class="item shrink_1 fg-1">D</div>
+            <div class="item shrink_1 fg-1">E</div>
+            <div class="item shrink_1 fg-1">E</div>
+            <div class="item shrink_1 fg-1">E</div>
+            <div class="item shrink_1 fg-1">E</div>
+            <div class="item shrink_1 fg-1">E</div>
+            <div class="item shrink_1 fg-1">E</div>
+        </div>
+    <h1>Flex Shrink 1 + Flex-Grow 1 Alternate Content</h1>
+        <div class="flex-container">
+            <div class="item shrink_1 fg-1">A</div>
+            <div class="item shrink_1 fg-1">B</div>
+            <div class="item shrink_1 fg-1">Ccccccccccccccccccccccc</div>
+            <div class="item shrink_1 fg-1">D</div>
+        </div>
+    <h1>Flex Shrink 0 + Flex-Grow 1 + Flex Basis 100px</h1>
+        <div class="flex-container">
+            <div class="item shrink_0 fg-1">Aaaa</div>
+            <div class="item shrink_0 fg-1">Bbbb</div>
+            <div class="item shrink_0 fg-1">C</div>
+            <div class="item shrink_0 fg-1">Dddd</div>
+            <div class="item shrink_0 fg-1">E</div>
+            </div>
+    <h1>Flex Shrink 2 + Flex-Grow 1 + Flex Basis 100px</h1>
+        <div class="flex-container">
+            <div class="item shrink_2 fg-1">A</div>
+            <div class="item shrink_2 fg-1">B</div>
+            <div class="item shrink_2 fg-1">C</div>
+            <div class="item shrink_2 fg-1">D</div>
+            <div class="item shrink_2 fg-1">E</div>
+
+            </div>
+    <h1>Flex Shrink 3 + Flex Basis 100px</h1>
+        <div class="flex-container">
+            <div class="item shrink_3 ">A</div>
+            <div class="item shrink_3 ">B</div>
+            <div class="item shrink_3 ">C</div>
+            <div class="item shrink_3 ">D</div>
+            <div class="item shrink_3 ">E</div>
+            </div>
+
+    
+        
+    
+</body>
+</html>
