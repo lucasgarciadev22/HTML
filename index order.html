@@ -1,0 +1,83 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Garcia HTML Order</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 500px;
+            margin-bottom: 20px;
+        }
+        .item{
+            flex: 1;
+            background-color: blueviolet;
+            margin: 5px;
+            font-size: 24px;
+            text-align: center;
+            color: aliceblue;
+        }
+        .order_1{
+            order: 1;
+        }
+        .order_2{
+            order: 2;
+        }
+        .order_3{
+            order: 3;
+        }
+        .order_4{
+            order: 4;
+        }
+        .row{
+            flex-direction: row;
+        }
+        .column{
+            flex-direction: column;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    <h1>Row</h1>
+    <h1>Order: 0</h1>
+        <div class="flex-container">
+            <div class="item ">A</div>
+            <div class="item ">B</div>
+            <div class="item ">C</div>
+            <div class="item ">D</div>
+            <div class="item ">E</div>
+        </div>
+    <h1>Order: Mixed</h1>
+        <div class="flex-container">
+            <div class="item order_4">A</div>
+            <div class="item order_3">B</div>
+            <div class="item order_1">Cccc</div>
+            <div class="item order_2">D</div>
+        </div>
+    <h1>Column</h1>
+    <h1>Order: 0</h1>
+        <div class="flex-container column">
+            <div class="item ">A</div>
+            <div class="item ">B</div>
+            <div class="item ">C</div>
+            <div class="item ">D</div>
+            <div class="item ">E</div>
+        </div>
+    <h1>Order: Mixed</h1>
+        <div class="flex-container column">
+            <div class="item order_4">A</div>
+            <div class="item order_3">B</div>
+            <div class="item order_1">Cccc</div>
+            <div class="item order_2">D</div>
+        </div>
+
+        
+    
+</body>
+</html>

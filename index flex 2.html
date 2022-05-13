@@ -1,0 +1,73 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Garcia HTML Flex II</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 500px;
+        }
+        .item{
+            background-color: coral;
+            margin: 5px;
+            font-size: 24px;
+            text-align: center;
+        }
+        .largura{
+            width: 200px;
+        }
+        .largura_min{
+            width: 200px;
+            min-width: 200px;
+        }
+        .flex_1{
+            flex: 1;
+            /* grow = 1, shrink = 1, basis = 0 > essa é a definição do flex em 1 */
+        }
+        .flex_2{
+            flex: 2;
+            /* grow = 2, shrink = 1, basis = 0 > essa é a definição do flex em 1 */
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <h1>Flex 1</h1>
+        <div class="flex-container">
+            <div class="item shrink_1 flex_1">A</div>
+            <div class="item shrink_1 flex_1">B</div>
+            <div class="item shrink_1 flex_1">C</div>
+            <div class="item shrink_1 flex_1">D</div>
+            <div class="item shrink_1 flex_1">E</div>
+        </div>
+    <h1>Flex Mix</h1>
+        <div class="flex-container">
+            <div class="item shrink_1 flex_1">A</div>
+            <div class="item shrink_1 flex_2">B</div>
+            <div class="item shrink_1 flex_2">Cccc</div>
+            <div class="item shrink_1 flex_1">D</div>
+        </div>
+    <h1>Flex Width Ignore (Width :200px Basis :0)</h1>
+        <div class="flex-container">
+            <div class="item shrink_1 flex_1 largura">A</div>
+            <div class="item shrink_1 flex_1 largura">B</div>
+            <div class="item shrink_1 flex_1 largura">Cccc</div>
+            <div class="item shrink_1 flex_1 largura">D</div>
+        </div>
+    <h1>Flex Width 200px (Min-Width :200px Basis :0)</h1>
+        <div class="flex-container">
+            <div class="item shrink_1 flex_1 largura_min">A</div>
+            <div class="item shrink_1 flex_1 largura_min">B</div>
+            <div class="item shrink_1 flex_1 largura_min">Cccc</div>
+            <div class="item shrink_1 flex_1 largura_min">D</div>
+        </div>
+    
+        
+    
+</body>
+</html>
