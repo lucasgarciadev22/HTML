@@ -57,6 +57,7 @@ line-height: 30px;
 /* identical to box height */
 }
 li{
+padding: 8px;
 font-family: 'Lato';
 font-style: normal;
 font-weight: 400;
@@ -205,10 +206,10 @@ min-height: 383px;
     color: #461E66;
 
 }
-.txt_our_services p{
+.txt_our_services h5{
     margin-top: 48px;
     height: 205px;  
-    color: black;
+    color: #461E66;
 
 }
 .our_services a{
@@ -292,6 +293,10 @@ min-height: 383px;
     color: #461E66;
 
 }
+.txt_our_plans h5{
+    margin-top: 48px; 
+    color: #461E66;
+}
 
 .our_plans a{
     text-align: center;
@@ -307,9 +312,11 @@ min-height: 383px;
     padding: 16px 32px;
     text-decoration: none;
     color: #E0E9FF;
-    ;
 
 }
+.our_plans_list{
+    color: #461E66;
+  }
 footer{
     background-color: #642A91;
 }
@@ -352,7 +359,8 @@ footer{
     align-self: flex-end;
 }
 .footer_logo img {
-    width: fit-content;
+    /* width: fit-content;
+    padding: auto; */
     margin: auto;
 }
 .footer_1 p{
